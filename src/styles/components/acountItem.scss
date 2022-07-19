@@ -1,0 +1,40 @@
+.Wrapper_Account_item {
+    display: flex;
+    align-items: center;
+    padding: 9px 16px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(22, 24, 35, 0.03);;
+    }
+
+    .Avatar_account {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 12px;
+    }
+
+    .info_account {
+        flex: 1;
+
+        .username_account {
+            display: flex;
+            font-size: 1.6rem;
+            font-weight: 600;
+
+            .check_icon_active {
+                flex: 1;
+                margin-left: 6px;
+                margin-top: 1px;
+            }
+        }
+        .name_Acc {
+            font-size: 1.4rem;
+        }
+
+    }
+
+
+
+}

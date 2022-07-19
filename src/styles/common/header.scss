@@ -1,0 +1,96 @@
+.Header_conten {
+    --boder-radius-seachfrom: 92px;
+    --height-searchFrom: 46px;
+    --height-searchFromTop-spacer: 9px;
+
+    width: 100%;
+    height: var(--default-layout-header);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    display: flex;
+    justify-content: center;
+
+
+
+    .inner_header {
+        height: 100%;
+        width: var(--default-layout-width);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .search_title {
+           font-size: 1.4rem;
+           font-weight: 600;
+           color: rgba(22, 24, 35, 0.5);
+           padding-left: 10px;
+        }
+
+    }
+
+    .search_header,
+    .popper_search {
+        width: 361px;
+    }
+
+    .search_header {
+        position: relative;
+        background-color: #eceaea;
+        height: var(--height-searchFrom);
+        border-radius: var(--boder-radius-seachfrom);
+        padding-left: 16px;
+        display: flex;
+        border: 1px solid transparent;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: calc(var(--height-searchFrom) - var(--height-searchFromTop-spacer) * 2);
+            width: 1px;
+            top: var(--height-searchFromTop-spacer);
+            right: 52px;
+            background-color: #c0c0c0;
+        }
+
+        &:focus-within {
+            border-color: #a9a9a9;
+        }
+
+        input {
+            flex: 1;
+            color: #1d1d1d;
+            font-size: 1.6rem;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            caret-color: var(--primary);
+        }
+
+        input:not(:placeholder-shown)~.search_button {
+            .icon_search {
+                fill: #1d1d1d;
+            }
+
+        }
+
+        .search_button {
+            width: 52px;
+            height: 100%;
+            border: none;
+            outline: none;
+            background-color: #eceaea;
+            border-bottom-right-radius: var(--boder-radius-seachfrom);
+            border-top-right-radius: var(--boder-radius-seachfrom);
+
+            &:hover {
+                cursor: pointer;
+                background-color: #c2c0c0;
+            }
+
+            &:active {
+                background-color: #dddcdc;
+            }
+        }
+    }
+}
+
+ 

@@ -1,0 +1,29 @@
+.Wrapper_Button_global {
+    min-width: 100px;
+    padding: 9px 16px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.action_header {
+    .primary {
+        color: var(--while);
+        background-color: var(--primary);
+        &:hover{
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;
+        }
+    }
+}
+.outline{
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: var(--while);
+    &:hover{
+        background-color: rgba(255, 24, 71, 0.06);
+    }
+}
