@@ -1,0 +1,20 @@
+.select_paging{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 9px 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    user-select: none;
+    border-color: var(--primary);
+    &:hover{
+        background-color: rgba(255, 24, 71, 0.06);
+    }
+}

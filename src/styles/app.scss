@@ -1,16 +1,21 @@
 // common 
 @import "./common/header.scss";
 @import "./common/slideBar.scss";
+@import "./common/home.scss";
+@import "./common/page.scss";
 // componet
 @import "components/defaultLayout.scss";
-@import "components/popper.scss";
 @import "components/acountItem.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
 //config Body Html 
-@import "style/button.scss";
+//StyleGlobal
+@import "style/popper.scss";
+@import "style/selection.scss";
+@import "style/popperMenuNoAuthen.scss";
 
 :root {
-    --primary: #fe2c55;
+    --primary: rgba(254, 44, 85, 1.0);
+    --defautl: #cccccc;
     --while: #fff;
     --black: #000;
     //deffautllayOut
@@ -19,6 +24,7 @@
 }
 
 * {
+    font-weight: 600;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
